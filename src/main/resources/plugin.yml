@@ -1,0 +1,22 @@
+main: me.siwannie.staffhunt.StaffHunt
+name: StaffHunt
+version: 3.0
+author: siwannie
+description: A PvP game where players hunt staff members for glory and upgrade their gear by mining.
+
+softdepend: [LuckPerms, PlaceholderAPI]
+
+commands:
+  staffhunt:
+    description: Main command for the StaffHunt plugin.
+    aliases: [sh]
+  shop:
+    description: Opens the Hunt Coin shop for players.
+
+permissions:
+  staffhunt.admin:
+    description: Grants access to all admin commands for StaffHunt.
+    default: op
+  staffhunt.player:
+    description: Grants access to basic player commands.
+    default: true

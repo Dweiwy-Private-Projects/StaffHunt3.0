@@ -1,0 +1,106 @@
+# StaffHunt Configuration
+
+plugin-prefix: "&8[&6StaffHunt&8] &r"
+
+# --- POINT SYSTEM REBALANCE ---
+# The total points for a kill are now calculated with a capped shared pool plus flat bonuses.
+
+# How long (in seconds) a hunter's damage contribution is tracked.
+# If they haven't hit the staff member within this time limit, their damage resets to 0.
+damage-expiration-seconds: 60
+
+# The maximum total points distributed among all attackers based on damage dealt.
+# This value is the entire pot that gets shared, scaling based on staff rank!
+max-damage-distribution-points:
+  trial: 35
+  helper: 70
+  moderator: 105
+  srmod: 140
+  admin: 175
+  manager: 250
+
+# --- STAFF REWARDS ---
+# Amount of Hunt Coins a staff member receives for killing a hunter.
+staff-kill-reward-coins: 15
+
+# A flat bonus awarded ONLY to the player who gets the final blow.
+kill-bonus-points: 25
+
+# An additional flat bonus awarded to the killer based on the rank of the staff member.
+rank-kill-bonus:
+  trial: 0
+  helper: 0
+  moderator: 0
+  srmod: 0
+  admin: 0
+  manager: 0
+# --- KILL MESSAGES ---
+# A random message will be chosen from the appropriate list upon player death.
+# Use {victim} for the player who died and {killer} for the one who killed them.
+kill-messages:
+  pvp:
+    - "{victim} was sent to the shadow realm by {killer}."
+    - "{killer} showed {victim} the way to the respawn screen."
+    - "{victim} was outplayed by {killer}'s superior gaming chair."
+    - "{killer} turned {victim} into a loot box."
+    - "{victim}'s adventure was cut short by {killer}."
+    - "{killer} served {victim} a knuckle sandwich."
+    - "{victim} was deleted by {killer}."
+    - "{killer} decided {victim} had too many hearts."
+    - "{victim} took an L from {killer}."
+    - "{killer} gave {victim} a free ticket to spawn."
+    - "{victim} learned a valuable lesson from {killer}."
+    - "{killer} unplugged {victim}'s life support."
+  general:
+    - "{victim} met a grizzly end."
+    - "{victim} forgot how to swim."
+    - "{victim} discovered gravity the hard way."
+    - "{victim}'s journey ended abruptly."
+    - "{victim} tried to hug a cactus."
+
+
+# Time in seconds for an ore to regenerate after being mined.
+ore-regen-time: 90
+
+# Currency (Hunt Coins) awarded for mining each ore type.
+currency-ores:
+  EMERALD_ORE:
+    value: 5
+    regen-time: 30
+
+# Spawn locations (do not edit manually, use /sh setspawn)
+spawns:
+  staff: ''
+  player: ''
+
+# Custom Item Settings
+custom-items:
+  medkit:
+    cooldown-seconds: 45
+    heal-duration-seconds: 10
+    heal-amplifier: 1 # (0=Regen I, 1=Regen II, etc.)
+  propulsor:
+    cooldown-seconds: 30
+    launch-power-forward: 2.5 # Multiplier for forward velocity
+    launch-power-upward: 1.2 # Multiplier for upward velocity
+
+# Data & Leaderboard Settings
+data-saving:
+  # How often (in seconds) to save the points.yml file during a game.
+  interval-seconds: 60
+
+# --- RESPAWN SETTINGS ---
+# Time in seconds players are invincible after respawning. Set to 0 to disable.
+respawn-invincibility-seconds: 5
+
+# --- SHOP PRICES ---
+# Base = cost of the first upgrade. Multiplier = added cost per subsequent level.
+shop-prices:
+  sharpness-base: 150
+  sharpness-multiplier: 100
+  protection-base: 200
+  protection-multiplier: 150
+  power-base: 100
+  power-multiplier: 75
+  golden-apple: 75
+  tracker: 50

@@ -1,0 +1,160 @@
+# ---------------------------------------------------------------
+# StaffHunt Kit Configuration
+# ---------------------------------------------------------------
+# Use the 'health' property for staff kits to set their
+# maximum health. 20 = 10 hearts.
+# ---------------------------------------------------------------
+
+hunter-kit:
+  armor:
+    '103': { material: DIAMOND_HELMET }
+    '102': { material: DIAMOND_CHESTPLATE }
+    '101': { material: DIAMOND_LEGGINGS }
+    '100': { material: DIAMOND_BOOTS }
+  inventory:
+    '0': { material: DIAMOND_SWORD }
+    '1': { material: BOW }
+    '2':
+      material: IRON_PICKAXE
+      can-destroy:
+        - EMERALD_ORE
+    '3': { material: COOKED_BEEF, amount: 16 }
+    '4': { material: GOLDEN_APPLE, amount: 2 }
+    '9': { material: ARROW, amount: 32 }
+
+staff-kits:
+  trial:
+    health: 20
+    armor:
+      '103': { material: DIAMOND_HELMET, enchantments: ["PROTECTION_ENVIRONMENTAL:4"] }
+      '102': { material: DIAMOND_CHESTPLATE, enchantments: ["PROTECTION_ENVIRONMENTAL:4"] }
+      '101': { material: DIAMOND_LEGGINGS, enchantments: ["PROTECTION_ENVIRONMENTAL:4"] }
+      '100': { material: DIAMOND_BOOTS, enchantments: ["PROTECTION_ENVIRONMENTAL:4"] }
+    inventory:
+      '0': { material: DIAMOND_SWORD, enchantments: ["DAMAGE_ALL:3"] }
+      '1': { material: BOW, enchantments: ["ARROW_INFINITE:1", "ARROW_DAMAGE:1"] }
+      '6': { material: GLASS_BOTTLE, display-name: "&eNitro Speed", lore: ["&7Right-click for a speed boost."] }
+      '7': { material: SULPHUR, display-name: "&aMedkit", lore: ["&7Right-click to start healing."] }
+      '8': { material: FIREWORK, display-name: "&6Propulsor", lore: ["&7Right-click to launch yourself."] }
+      '9': { material: COOKED_BEEF, amount: 64 }
+      '10': { material: GOLDEN_APPLE, amount: 12 }
+      '11': { material: ARROW, amount: 1 }
+
+  helper:
+    health: 20
+    armor:
+      '103': { material: DIAMOND_HELMET, enchantments: ["PROTECTION_ENVIRONMENTAL:4"] }
+      '102': { material: DIAMOND_CHESTPLATE, enchantments: ["PROTECTION_ENVIRONMENTAL:4"] }
+      '101': { material: DIAMOND_LEGGINGS, enchantments: ["PROTECTION_ENVIRONMENTAL:4"] }
+      '100': { material: DIAMOND_BOOTS, enchantments: ["PROTECTION_ENVIRONMENTAL:4"] }
+    inventory:
+      '0': { material: DIAMOND_SWORD, enchantments: ["DAMAGE_ALL:3", "FIRE_ASPECT:1"] }
+      '1': { material: BOW, enchantments: ["ARROW_INFINITE:1", "ARROW_DAMAGE:2"] }
+      '5': { material: SNOW_BALL, display-name: "&fCobweb Ball", lore: ["&7Throw to spawn a temporary cobweb."] }
+      '6': { material: GLASS_BOTTLE, display-name: "&eNitro Speed", lore: ["&7Right-click for a speed boost."] }
+      '7': { material: SULPHUR, display-name: "&aMedkit", lore: ["&7Right-click to start healing."] }
+      '8': { material: FIREWORK, display-name: "&6Propulsor", lore: ["&7Right-click to launch yourself."] }
+      '9': { material: COOKED_BEEF, amount: 64 }
+      '10': { material: GOLDEN_APPLE, amount: 24 }
+      '11': { material: ARROW, amount: 1 }
+      '12': { material: GOLDEN_APPLE, data: 1, amount: 1 } # Enchanted Golden Apple
+      '13': { material: WEB, display-name: "&7Burrow", lore: ["&7Right-click to hide underground."] }
+
+  moderator:
+    health: 20
+    armor:
+      '103': { material: DIAMOND_HELMET, enchantments: ["PROTECTION_ENVIRONMENTAL:4"] }
+      '102': { material: DIAMOND_CHESTPLATE, enchantments: ["PROTECTION_ENVIRONMENTAL:4"] }
+      '101': { material: DIAMOND_LEGGINGS, enchantments: ["PROTECTION_ENVIRONMENTAL:4"] }
+      '100': { material: DIAMOND_BOOTS, enchantments: ["PROTECTION_ENVIRONMENTAL:4"] }
+    inventory:
+      '0': { material: DIAMOND_SWORD, enchantments: ["DAMAGE_ALL:4", "FIRE_ASPECT:1"] }
+      '1': { material: BOW, enchantments: ["ARROW_INFINITE:1", "ARROW_DAMAGE:2", "ARROW_FIRE:1"] }
+      '4': { material: SKULL_ITEM, display-name: "&bBeach Ball", lore: ["&7Throw an explosive ball."] }
+      '5': { material: NETHER_STAR, display-name: "&8Invisibility Cloak", lore: ["&7Right-click to become invisible."] }
+      '6': { material: FLINT_AND_STEEL, display-name: "&eFlash Bomb", lore: ["&7Blind and slow nearby hunters."] }
+      '7': { material: SULPHUR, display-name: "&aMedkit", lore: ["&7Right-click to start healing."] }
+      '8': { material: FIREWORK, display-name: "&6Propulsor", lore: ["&7Right-click to launch yourself."] }
+      '9': { material: COOKED_BEEF, amount: 64 }
+      '10': { material: GOLDEN_APPLE, amount: 32 }
+      '11': { material: ARROW, amount: 1 }
+      '12': { material: GOLDEN_APPLE, data: 1, amount: 3 } # Enchanted Golden Apples
+      '13': { material: WEB, display-name: "&7Burrow", lore: ["&7Right-click to hide underground."] }
+      '14': { material: DIAMOND_AXE, display-name: "&bLeviathan Axe", lore: ["&7Leap and slam down with lightning."] }
+
+  srmod:
+    health: 20
+    armor:
+      '103': { material: DIAMOND_HELMET, enchantments: ["PROTECTION_ENVIRONMENTAL:4"] }
+      '102': { material: DIAMOND_CHESTPLATE, enchantments: ["PROTECTION_ENVIRONMENTAL:4"] }
+      '101': { material: DIAMOND_LEGGINGS, enchantments: ["PROTECTION_ENVIRONMENTAL:4"] }
+      '100': { material: DIAMOND_BOOTS, enchantments: ["PROTECTION_ENVIRONMENTAL:4"] }
+    inventory:
+      '0': { material: DIAMOND_SWORD, enchantments: ["DAMAGE_ALL:4", "FIRE_ASPECT:1"] }
+      '1': { material: BOW, enchantments: ["ARROW_INFINITE:1", "ARROW_DAMAGE:3", "ARROW_FIRE:1"] }
+      '3': { material: FISHING_ROD, display-name: "&bGravity Launch", lore: ["&7Launch nearby hunters away."] }
+      '4': { material: SKULL_ITEM, display-name: "&bBeach Ball", lore: ["&7Throw an explosive ball."] }
+      '5': { material: NETHER_STAR, display-name: "&8Invisibility Cloak", lore: ["&7Right-click to become invisible."] }
+      '6': { material: FLINT_AND_STEEL, display-name: "&eFlash Bomb", lore: ["&7Blind and slow nearby hunters."] }
+      '7': { material: SULPHUR, display-name: "&aMedkit", lore: ["&7Right-click to start healing."] }
+      '8': { material: FIREWORK, display-name: "&6Propulsor", lore: ["&7Right-click to launch yourself."] }
+      '9': { material: COOKED_BEEF, amount: 64 }
+      '10': { material: GOLDEN_APPLE, amount: 48 }
+      '11': { material: ARROW, amount: 1 }
+      '12': { material: GOLDEN_APPLE, data: 1, amount: 5 } # Enchanted Golden Apples
+      '13': { material: WEB, display-name: "&7Burrow", lore: ["&7Right-click to hide underground."] }
+      '14': { material: DIAMOND_AXE, display-name: "&bLeviathan Axe", lore: ["&7Leap and slam down with lightning."] }
+      '15': { material: MONSTER_EGG, display-name: "&5Phantom Phase", lore: ["&7Transform into a flying bat."] }
+
+  admin:
+    health: 20
+    armor:
+      '103': { material: DIAMOND_HELMET, enchantments: ["PROTECTION_ENVIRONMENTAL:4"] }
+      '102': { material: DIAMOND_CHESTPLATE, enchantments: ["PROTECTION_ENVIRONMENTAL:4", "THORNS:1"] }
+      '101': { material: DIAMOND_LEGGINGS, enchantments: ["PROTECTION_ENVIRONMENTAL:4"] }
+      '100': { material: DIAMOND_BOOTS, enchantments: ["PROTECTION_ENVIRONMENTAL:4"] }
+    inventory:
+      '0': { material: DIAMOND_SWORD, enchantments: ["DAMAGE_ALL:5", "FIRE_ASPECT:2"] }
+      '1': { material: BOW, enchantments: ["ARROW_INFINITE:1", "ARROW_DAMAGE:3", "ARROW_FIRE:1", "ARROW_KNOCKBACK:1"] }
+      '2': { material: IRON_SWORD, display-name: "&8Shadow Blade", lore: ["&7Right-click to teleport forward."] }
+      '3': { material: RED_ROSE, display-name: "&cLifesaver", lore: ["&7Heal based on nearby players."] }
+      '4': { material: FISHING_ROD, display-name: "&bGravity Launch", lore: ["&7Launch nearby hunters away."] }
+      '5': { material: NETHER_STAR, display-name: "&8Invisibility Cloak", lore: ["&7Right-click to become invisible."] }
+      '6': { material: FLINT_AND_STEEL, display-name: "&eFlash Bomb", lore: ["&7Blind and slow nearby hunters."] }
+      '7': { material: SULPHUR, display-name: "&aMedkit", lore: ["&7Right-click to start healing."] }
+      '8': { material: FIREWORK, display-name: "&6Propulsor", lore: ["&7Right-click to launch yourself."] }
+      '9': { material: COOKED_BEEF, amount: 64 }
+      '10': { material: GOLDEN_APPLE, amount: 64 }
+      '11': { material: ARROW, amount: 1 }
+      '12': { material: GOLDEN_APPLE, data: 1, amount: 8 } # Enchanted Golden Apples
+      '13': { material: WEB, display-name: "&7Burrow", lore: ["&7Right-click to hide underground."] }
+      '14': { material: DIAMOND_AXE, display-name: "&bLeviathan Axe", lore: ["&7Leap and slam down with lightning."] }
+      '15': { material: MONSTER_EGG, display-name: "&5Phantom Phase", lore: ["&7Transform into a flying bat."] }
+      '16': { material: ARROW, display-name: "&cArrow Rain", lore: ["&7Call down a barrage of arrows."] }
+
+  manager:
+    health: 20
+    armor:
+      '103': { material: DIAMOND_HELMET, enchantments: ["PROTECTION_ENVIRONMENTAL:5", "THORNS:2"] }
+      '102': { material: DIAMOND_CHESTPLATE, enchantments: ["PROTECTION_ENVIRONMENTAL:5", "THORNS:2"] }
+      '101': { material: DIAMOND_LEGGINGS, enchantments: ["PROTECTION_ENVIRONMENTAL:5"] }
+      '100': { material: DIAMOND_BOOTS, enchantments: ["PROTECTION_ENVIRONMENTAL:5"] }
+    inventory:
+      '0': { material: DIAMOND_SWORD, enchantments: ["DAMAGE_ALL:5", "FIRE_ASPECT:2", "KNOCKBACK:1"] }
+      '1': { material: BOW, enchantments: ["ARROW_INFINITE:1", "ARROW_DAMAGE:3", "ARROW_FIRE:1", "ARROW_KNOCKBACK:2"] }
+      '2': { material: IRON_SWORD, display-name: "&8Shadow Blade", lore: ["&7Right-click to teleport forward."] }
+      '3': { material: RED_ROSE, display-name: "&cLifesaver", lore: ["&7Heal based on nearby players."] }
+      '4': { material: FISHING_ROD, display-name: "&bGravity Launch", lore: ["&7Launch nearby hunters away."] }
+      '5': { material: NETHER_STAR, display-name: "&8Invisibility Cloak", lore: ["&7Right-click to become invisible."] }
+      '6': { material: ENDER_PEARL, display-name: "&5Ender Totem", lore: ["&7Right-click to summon Admins."] }
+      '7': { material: SULPHUR, display-name: "&aMedkit", lore: ["&7Right-click to start healing."] }
+      '8': { material: FIREWORK, display-name: "&6Propulsor", lore: ["&7Right-click to launch yourself."] }
+      '9': { material: COOKED_BEEF, amount: 64 }
+      '10': { material: GOLDEN_APPLE, amount: 64 }
+      '11': { material: ARROW, amount: 1 }
+      '12': { material: GOLDEN_APPLE, data: 1, amount: 12 } # Enchanted Golden Apples
+      '13': { material: WEB, display-name: "&7Burrow", lore: ["&7Right-click to hide underground."] }
+      '14': { material: DIAMOND_AXE, display-name: "&bLeviathan Axe", lore: ["&7Leap and slam down with lightning."] }
+      '15': { material: MONSTER_EGG, display-name: "&5Phantom Phase", lore: ["&7Transform into a flying bat."] }
+      '16': { material: ARROW, display-name: "&cArrow Rain", lore: ["&7Call down a barrage of arrows."] }
+      '17': { material: GOLD_SWORD, display-name: "&5Chaos Blade", lore: ["&7Right-click to charge your next hit."] }
